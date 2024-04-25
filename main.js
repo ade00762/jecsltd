@@ -2,16 +2,14 @@ const form=document.querySelector("form");
 const fullName= document.getElementById("name");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
-
-
-
+ 
 function SendEmail(){
 const bodyMessage = `Full Name:${fullName.value} <br> Email:${email.value} <br> Message:${message.value}`;              
 
     Email.send({
-        SecureToken : "ef9bcd34-d5a5-4745-86e7-f4ea37082938 ",
-        To : 'coolsuny00762@gmail.com',
-        From : "coolsuny00762@gmail.com",
+        SecureToken : "4e440fbf-1fe8-41a1-8b08-2c8dbf07256a",
+        To : 'dapoajike@gmail.com',
+        From : "contactus@jecslimited.com",
         Subject : Subject.value,
         Body : bodyMessage 
     }).then(
